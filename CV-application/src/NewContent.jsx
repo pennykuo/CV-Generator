@@ -39,21 +39,25 @@ export default function NewContent() {
         setDescription(e.target.value);
     }
     function addExperience(e){
-        
+        e.preventDefault();
     }
     function deleteExperience(id){
         setExperience((currentExperience)=>currentExperience.filter((i)=>i.id!==id));
     }
     function saveExperience(){
-
+        e.preventDefault();
     }
     function deleteEducation(id){
         setEducation((currentEducation)=>currentEducation.filter((i)=>i.id!==id));
 
 
     }
-    function addEducation(e){}
-    function saveEducation(){}
+    function addEducation(e){
+        e.preventDefault();
+    }
+    function saveEducation(e){
+        e.preventDefault();
+    }
     
     return (
 
