@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 export default function NewEducation({
   addEducation,
-  education,
-  saveEducation,
   deleteEducation,
+  saveEducation,
+  education,
 }) {
   return (
     <div className="createEdu">
@@ -12,7 +12,7 @@ export default function NewEducation({
         return (
           <div key={i.id}>
             <li key={i.id}>
-              <form key={i.id} addEducation={(e) => saveEducation(e, i.id)} className="input-row">
+              <form key={i.id} onSubmit={(e) => saveEducation(e, i.id)} className="input-row">
                 <input placeholder="University/School" required defaultValue={i.position} />
                 <input placeholder="Course" required defaultValue={i.company} />
                 <input placeholder="Start Year" required defaultValue={i.start} />
@@ -26,7 +26,7 @@ export default function NewEducation({
           </div>
         );
       })}
-      <form addEducation={addEducation}>
+      <form onSubmit={addEducation}>
         <input placeholder="University/School" required />
         <input placeholder="Course" required />
         <input placeholder="Start Year" required />

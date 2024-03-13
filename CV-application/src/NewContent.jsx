@@ -38,8 +38,8 @@ export default function NewContent() {
     function onDescription(e) {
         setDescription(e.target.value);
     }
-    function addExperience(){
-
+    function addExperience(e){
+        
     }
     function deleteExperience(id){
         setExperience((currentExperience)=>currentExperience.filter((i)=>i.id!==id));
@@ -47,8 +47,12 @@ export default function NewContent() {
     function saveExperience(){
 
     }
-    function deleteEducation(id){}
-    function addEducation(){}
+    function deleteEducation(id){
+        setEducation((currentEducation)=>currentEducation.filter((i)=>i.id!==id));
+
+
+    }
+    function addEducation(e){}
     function saveEducation(){}
     
     return (

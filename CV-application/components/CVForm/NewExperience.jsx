@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 export default function NewExperience({
   addExperience,
-  experience,
-  saveExperience,
   deleteExperience,
+  saveExperience,
+  experience,
 }) {
   return (
     <div className="createExp">
@@ -12,7 +12,7 @@ export default function NewExperience({
         return (
           <div key={i.id}>
             <li key={i.id}>
-              <form key={i.id} addExperience={(e) => saveExperience(e, i.id)} className="input-row">
+              <form key={i.id} onSubmit={(e) => saveExperience(e, i.id)} className="input-row">
                 <input placeholder="Position" required defaultValue={i.position} />
                 <input placeholder="Company" required defaultValue={i.company} />
                 <input placeholder="Start Date" required defaultValue={i.start} />
@@ -27,7 +27,7 @@ export default function NewExperience({
           </div>
         );
       })}
-      <form addExperience={addExperience}>
+      <form onSubmit={addExperience}>
         <input placeholder="Position" required />
         <input placeholder="Company" required />
         <input placeholder="Start Date" required />
