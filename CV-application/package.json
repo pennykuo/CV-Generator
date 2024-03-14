@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://pennykuo.github.io/CV-Generator/",
+  "homepage": "https://pennykuo.github.io/CV-Generator/cv-application/",
   "scripts": {
     "dev": "vite",
     "start": "start",
