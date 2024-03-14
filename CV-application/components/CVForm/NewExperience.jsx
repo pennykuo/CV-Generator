@@ -19,8 +19,8 @@ export default function NewExperience({
                 <input placeholder="End Date" required defaultValue={i.end} />
                 <input placeholder="Description" id="description" required defaultValue={i.desc} />
                 <div className="btn-container">
-                  <button type="submit" className="btn btn-save">Save</button>
-                  <button type="button" className="btn btn-delete" onClick={(e) => deleteExperience(i.id)}>Delete</button>
+                  <button type="submit" className="btn-save">Save</button>
+                  <button type="button" className="btn-delete" onClick={(e) => deleteExperience(i.id)}>Delete</button>
                 </div>
               </form>
             </li>

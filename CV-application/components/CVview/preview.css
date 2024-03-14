@@ -1,27 +1,52 @@
-.inputInfo,.createExp,.createEdu{
+.inputInfo,
+.createExp,
+.createEdu {
   background-color: rgb(199, 196, 196);
   padding: 10px;
 }
-
-.info {
+#preview-personal hr {
+  width: 100%;
+  height: 4px;
+  background-color: var(--darkBlue);
+  margin-bottom: 20px;
+}
+#preview-personal .info {
   display: flex;
   flex-direction: column;
-
+  width: 500px;
+  display: grid;
+  grid-template-columns: 2.8fr 1.2fr;
 }
-.btn_addExp,.btn_addEdu {
+#info-1 {
+  min-width: 200px;
+  text-align: left;
+  font-size: 25px;
+}
+.index_preview {
+  border: 1px solid black;
+  height: 100%;
+}
+#preview-personal #info-2 {
+  height: 100%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.btn_addExp,
+.btn_addEdu {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(97, 96, 96);
   width: 100%;
 }
+
 .index_Gen {
   display: flex;
+  
 }
 
-.info-2 {
-  font-size: 20px;
-}
 
 input {
   display: flex;
@@ -30,4 +55,37 @@ input {
   font-size: 25px;
   padding: 5px;
   margin: 10px;
+}
+
+.btn-container {
+  display: flex;
+  background-color: rgb(199, 196, 196);
+
+}
+.btn-reset{
+  background-color: rgb(255, 0, 0);
+  width: 50%;
+}
+.btn-print{
+  background-color: rgb(240, 240, 32);
+  width: 50%;
+
+}
+.btn-save{
+  background-color: rgb(213, 76, 22);
+  width: 100%;
+}
+.btn-delete {
+
+  background-color: rgb(95, 111, 235);
+  width: 100%;
+}
+.exp-info,.edu-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2.8fr 1.2fr;
+
+}
+li::marker{
+  content:'';
 }

@@ -13,13 +13,13 @@ export default function NewEducation({
           <div key={i.id}>
             <li key={i.id}>
               <form key={i.id} onSubmit={(e) => saveEducation(e, i.id)} className="input-row">
-                <input placeholder="University/School" required defaultValue={i.position} />
-                <input placeholder="Course" required defaultValue={i.company} />
+                <input placeholder="University/School" required defaultValue={i.university} />
+                <input placeholder="Course" required defaultValue={i.course} />
                 <input placeholder="Start Year" required defaultValue={i.start} />
-                <input placeholder="Graduated" required defaultValue={i.end} /> 
+                <input placeholder="Graduated" required defaultValue={i.graduated} />
                 <div className="btn-container">
-                  <button type="submit" className="btn btn-save">Save</button>
-                  <button type="button" className="btn btn-delete" onClick={(e) => deleteEducation(i.id)}>Delete</button>
+                  <button type="submit" className="btn-save">Save</button>
+                  <button type="button" className="btn-delete" onClick={(e) => deleteEducation(i.id)}>Delete</button>
                 </div>
               </form>
             </li>
