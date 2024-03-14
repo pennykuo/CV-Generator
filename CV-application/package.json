@@ -5,12 +5,13 @@
   "type": "module",
   "homepage": "https://pennykuo.github.io/CV-Generator/",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "dev": "react-scripts vite",
+    "build": "react-scripts build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+    
   },
   "dependencies": {
     "gh-pages": "^6.1.1",
